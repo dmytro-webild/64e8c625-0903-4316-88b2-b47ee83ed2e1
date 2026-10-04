@@ -38,7 +38,7 @@ export default function Layout() {
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarCentered
-      logo="Yasemin Günhan"
+      logo=""
       ctaButton={{
         text: "Projeni anlat",
         href: "#contact",

@@ -57,7 +57,13 @@ const NavbarCentered = ({ logo, navItems, ctaButton }: NavbarCenteredProps) => {
         )}
       >
         <div className="relative mx-auto flex items-center justify-between h-full w-content-width">
-          <a href="/" className="text-xl font-medium text-foreground">{logo}</a>
+          <a href="/" className="flex items-center">
+            <img
+              src="https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791150079778-5ioj3223.png"
+              alt="Yasemin Günhan"
+              className="h-8 md:h-10 w-auto object-contain"
+            />
+          </a>
 
           <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6">
             {navItems.map((item) => (
