@@ -11,7 +11,7 @@ export default function ContactSection(): React.JSX.Element {
             <SectionErrorBoundary name="contact">
               <ContactCta
                 tag="İletişim"
-                text="Markanızın sistemini tasarlamaya başlayalım. Projenizi anlatın, birlikte neler yapabileceğimizi planlayalım."
+                text="Markanızın sistemini tasarlamaya başlayalım. Projenizi anlatın; 24 saat içinde dönüş yapıp birlikte neler yapabileceğimizi planlayalım."
                 primaryButton={{ text: "info@yasemingunhan.com", href: "mailto:info@yasemingunhan.com" }}
                 secondaryButton={{ text: "LinkedIn Profili", href: "https://www.linkedin.com/in/yasemin-gunhan-72bb55172/" }}
                 textAnimation="fade-blur"
