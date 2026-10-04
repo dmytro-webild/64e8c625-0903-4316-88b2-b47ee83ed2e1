@@ -28,7 +28,7 @@ export default function Layout() {
       "href": "#contact"
     },
     {
-      "name": "Services",
+      "name": "Hizmetler",
       "href": "#services"
     }
   ];
