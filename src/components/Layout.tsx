@@ -8,7 +8,7 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 export default function Layout() {
   const navItems = [
     {
-      "name": "Ana sayfa",
+      "name": "Anasayfa",
       "href": "#hero"
     },
     {
