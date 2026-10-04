@@ -4,6 +4,10 @@ import { Target, Palette, Search, Zap } from 'lucide-react';
 import type { LucideIcon } from "lucide-react";
 
 import Button from "@/components/ui/Button";
+import HeroBackgroundSlot from "@/components/ui/HeroBackgroundSlot";
+import TextAnimation from "@/components/ui/TextAnimation";
+import ImageOrVideo from "@/components/ui/ImageOrVideo";
+import AvatarGroup from "@/components/ui/AvatarGroup";
 
 const primaryButton = {
   text: "Çalışmalara bak",
@@ -13,44 +17,97 @@ const secondaryButton = {
   text: "Projeni anlat",
   href: "#contact"
 };
+const items = [
+  {
+    text: "Strateji",
+    icon: Target
+  },
+  {
+    text: "Tasarım",
+    icon: Palette
+  },
+  {
+    text: "Görünürlük",
+    icon: Search
+  },
+  {
+    text: "Hız",
+    icon: Zap
+  }
+];
+
+type HeroOverlayMarqueeProps = {
+  tag: string;
+  title: string;
+  description: string;
+  primaryButton: { text: string; href: string };
+  secondaryButton: { text: string; href: string };
+  avatarsSrc?: string[];
+  avatarsLabel?: string;
+  items: { text: string; icon: LucideIcon }[];
+  textAnimation: "slide-up" | "fade-blur" | "fade";
+} & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never });
 
 const HeroInline = () => {
   return (
     <section
       aria-label="Hero section"
-      className="relative overflow-hidden flex flex-col justify-center min-h-[80vh] py-20 md:py-28 bg-[#0F3D3E] w-full"
+      className="relative overflow-hidden flex flex-col justify-between mb-20 w-full h-svh"
     >
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center opacity-60"
-        style={{ backgroundImage: "url('/hero-arka-plan.png')" }}
+      <HeroBackgroundSlot />
+      <ImageOrVideo
+        imageSrc={"https://images.unsplash.com/photo-1600508774634-4e11d34730e2?auto=format&fit=crop&w=2000&q=80"}
+        className="absolute inset-0 object-cover w-full h-full rounded-none"
       />
-      <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#0F3D3E]/90 via-[#0F3D3E]/70 to-transparent" />
 
-      <div className="relative z-10 mx-auto w-content-width">
-        <div className="flex flex-col gap-6 max-w-[620px]">
-          <h1 className="text-[36px] sm:text-[48px] md:text-[56px] lg:text-[72px] font-semibold leading-[1.05] text-white tracking-tight">
-            Markanız önce tasarlanır,<br />
-            sonra bulunur.
-          </h1>
+      <div
+        className="absolute z-10 left-0 top-0 w-[150vw] h-[150vw] -translate-x-1/2 -translate-y-1/2 backdrop-blur mask-[radial-gradient(circle,black_20%,transparent_70%)]"
+        aria-hidden="true"
+      />
 
-          <p className="text-[18px] sm:text-[20px] font-normal leading-relaxed text-white/90 max-w-[560px]">
-            Adana merkezli marka tasarımcısı Yasemin Günhan. Marka kimliği ve ambalaj tasarlıyorum, ek olarak yapay zekâ destekli arama görünürlüğü kuruyorum.
-          </p>
-
-          <div className="flex items-center gap-6 mt-2">
-            <a
-              href={primaryButton.href}
-              className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-[#E4572E] text-white text-[16px] font-semibold hover:bg-[#d04a23] transition-colors"
-            >
-              {primaryButton.text}
-            </a>
-            <a
-              href={secondaryButton.href}
-              className="text-white text-[16px] font-medium underline underline-offset-4 hover:text-white/80 transition-colors"
-            >
-              {secondaryButton.text}
-            </a>
+      <div className="relative z-10 mx-auto pt-28 md:pt-32 w-content-width">
+        <div className="flex flex-col gap-4 w-full lg:w-4/5 xl:w-3/4">
+          <div className="mb-1 px-3 py-1 w-fit text-sm card rounded">
+            <p>{"Marka Tasarımı & AEO"}</p>
           </div>
+
+          <TextAnimation
+            text={"Markanıza Yüksek Dönüşüm ve Dijital Liderlik Kazandıran Stratejik Tasarım."}
+            variant={"fade-blur"}
+            gradientText={false}
+            tag="h1"
+            className="text-[40px] md:text-[64px] lg:text-[88px] leading-[1.05] font-bold text-balance text-white"
+          />
+
+          <TextAnimation
+            text={"Ölçülebilir büyüme ve pazar liderliği sağlayan tasarım çözümleri. Marka kimliğinizi, ambalajlarınızı ve yapay zekâ arama görünürlüğünüzü (AEO) güçlendirerek doğrudan sonuç alın."}
+            variant={"fade-blur"}
+            gradientText={false}
+            tag="p"
+            className="text-lg md:text-xl leading-snug text-balance text-white"
+          />
+
+          <div className="flex flex-wrap gap-3 mt-2 md:mt-3">
+            <Button text={primaryButton.text} href={primaryButton.href} variant="primary" />
+            <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary" animationDelay={0.1} />
+          </div>
+
+          {undefined && undefined.length > 0 && (
+            <div className="mt-3 md:mt-4">
+              <AvatarGroup size="lg" labelClassName="text-primary-cta-text" />
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div className="relative z-10 overflow-hidden mx-auto pb-8 w-content-width mask-fade-x">
+        <div className="flex w-max animate-marquee-horizontal" style={{ animationDuration: "30s" }}>
+          {[...items, ...items, ...items, ...items].map((item, index) => (
+            <div key={index} className="flex items-center shrink-0 gap-1 mx-3 pl-2 pr-4 py-2 card rounded">
+              <item.icon className="h-(--text-base) text-foreground" />
+              <span className="whitespace-nowrap text-base font-medium text-foreground">{item.text}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
