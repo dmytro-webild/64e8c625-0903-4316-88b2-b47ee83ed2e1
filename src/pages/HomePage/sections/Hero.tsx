@@ -72,7 +72,7 @@ const HeroInline = () => {
           </div>
 
           <TextAnimation
-            text={"Markanızın Büyümesini ve Dijital Görünürlüğünü Artıran Stratejik Tasarım."}
+            text={"Markanıza Yüksek Dönüşüm ve Dijital Liderlik Kazandıran Stratejik Tasarım."}
             variant={"fade-blur"}
             gradientText={false}
             tag="h1"
@@ -80,7 +80,7 @@ const HeroInline = () => {
           />
 
           <TextAnimation
-            text={"Adana merkezli tasarım stüdyosu. Stratejik marka kimliği, ambalaj tasarımı ve yapay zekâ destekli arama görünürlüğü (AEO) çözümleri ile markanızı geleceğe hazırlıyorum."}
+            text={"Ölçülebilir büyüme ve pazar liderliği sağlayan tasarım çözümleri. Marka kimliğinizi, ambalajlarınızı ve yapay zekâ arama görünürlüğünüzü (AEO) güçlendirerek doğrudan sonuç alın."}
             variant={"fade-blur"}
             gradientText={false}
             tag="p"
