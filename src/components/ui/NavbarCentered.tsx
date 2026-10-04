@@ -5,10 +5,12 @@ import { cls } from "@/lib/utils";
 import Button from "@/components/ui/Button";
 
 interface NavbarCenteredProps {
-  logo: string;
+  logo?: string;
   navItems: { name: string; href: string }[];
   ctaButton: { text: string; href: string };
 }
+
+const defaultLogo = "https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791150079778-5ioj3223.png";
 
 const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, onClose?: () => void) => {
   if (href.startsWith("#")) {
@@ -19,10 +21,10 @@ const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, on
   onClose?.();
 };
 
-const NavbarCentered = ({ logo, navItems, ctaButton }: NavbarCenteredProps) => {
+const NavbarCentered = ({ logo = defaultLogo, navItems, ctaButton }: NavbarCenteredProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -47,6 +49,8 @@ const NavbarCentered = ({ logo, navItems, ctaButton }: NavbarCenteredProps) => {
     };
   }, [menuOpen]);
 
+  const logoSrc = logo || defaultLogo;
+
   return (
     <>
       <nav
@@ -57,7 +61,13 @@ const NavbarCentered = ({ logo, navItems, ctaButton }: NavbarCenteredProps) => {
         )}
       >
         <div className="relative mx-auto flex items-center justify-between h-full w-content-width">
-          <a href="/" className="text-xl font-medium text-foreground">{logo}</a>
+          <a href="/" className="flex items-center">
+            <img
+              src={logoSrc}
+              alt="Yasemin Günhan"
+              className="h-8 md:h-10 w-auto object-contain"
+            />
+          </a>
 
           <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6">
             {navItems.map((item) => (

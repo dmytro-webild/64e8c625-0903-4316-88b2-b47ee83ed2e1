@@ -7,81 +7,82 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 
 export default function Layout() {
   const navItems = [
-  {
-    "name": "Ana sayfa",
-    "href": "#hero"
-  },
-  {
-    "name": "Çalışmalar",
-    "href": "#projects"
-  },
-  {
-    "name": "Hakkımda",
-    "href": "#about"
-  },
-  {
-    "name": "Yazılar",
-    "href": "#blog"
-  },
-  {
-    "name": "İletişim",
-    "href": "#contact"
-  },
-  {
-    "name": "Services",
-    "href": "#services"
-  }
-];
+    {
+      "name": "Ana sayfa",
+      "href": "#hero"
+    },
+    {
+      "name": "Çalışmalar",
+      "href": "#projects"
+    },
+    {
+      "name": "Hakkımda",
+      "href": "#about"
+    },
+    {
+      "name": "Yazılar",
+      "href": "#blog"
+    },
+    {
+      "name": "İletişim",
+      "href": "#contact"
+    },
+    {
+      "name": "Services",
+      "href": "#services"
+    }
+  ];
 
   return (
     <StyleProvider buttonVariant="magnetic" siteBackground="gridDots" heroBackground="cornerGlow">
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarCentered
-      logo="Yasemin Günhan"
-      ctaButton={{
-        text: "Projeni anlat",
-        href: "#contact",
-      }}
-     navItems={navItems} />
+          logo="https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791150079778-5ioj3223.png"
+          ctaButton={{
+            text: "Projeni anlat",
+            href: "#contact",
+          }}
+          navItems={navItems}
+        />
       </SectionErrorBoundary>
       <main className="flex-grow">
         <Outlet />
       </main>
       <SectionErrorBoundary name="footer">
         <FooterBasic
-      columns={[
-        {
-          title: "İletişim",
-          items: [
+          columns={[
             {
-              label: "info@yasemingunhan.com",
-              href: "mailto:info@yasemingunhan.com",
+              title: "İletişim",
+              items: [
+                {
+                  label: "info@yasemingunhan.com",
+                  href: "mailto:info@yasemingunhan.com",
+                },
+              ],
             },
-          ],
-        },
-        {
-          title: "Sosyal",
-          items: [
             {
-              label: "LinkedIn",
-              href: "https://www.linkedin.com/in/yasemin-gunhan-72bb55172/",
+              title: "Sosyal",
+              items: [
+                {
+                  label: "LinkedIn",
+                  href: "https://www.linkedin.com/in/yasemin-gunhan-72bb55172/",
+                },
+              ],
             },
-          ],
-        },
-        {
-          title: "Yasal",
-          items: [
             {
-              label: "KVKK Politikası",
-              href: "#",
+              title: "Yasal",
+              items: [
+                {
+                  label: "KVKK Politikası",
+                  href: "#",
+                },
+              ],
             },
-          ],
-        },
-      ]}
-      leftText="© 2024 Yasemin Günhan Design. Tüm hakları saklıdır."
-      rightText="Adana, Türkiye"
-    />
+          ]}
+          leftText="© 2024 Yasemin Günhan Design. Tüm hakları saklıdır."
+          rightText="Adana, Türkiye"
+        />
       </SectionErrorBoundary>
     </StyleProvider>
   );
