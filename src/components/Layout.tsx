@@ -8,12 +8,16 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 export default function Layout() {
   const navItems = [
     {
-      "name": "Anasayfa",
+      "name": "Ana sayfa",
       "href": "#hero"
     },
     {
       "name": "Çalışmalar",
       "href": "#projects"
+    },
+    {
+      "name": "Hizmetler",
+      "href": "#services"
     },
     {
       "name": "Hakkımda",
@@ -26,10 +30,6 @@ export default function Layout() {
     {
       "name": "İletişim",
       "href": "#contact"
-    },
-    {
-      "name": "Hizmetler",
-      "href": "#services"
     }
   ];
 
