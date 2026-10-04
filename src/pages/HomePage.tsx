@@ -22,7 +22,20 @@ export default function HomePage() {
         text: "Projeni anlat",
         href: "#contact",
       }}
-      imageSrc="http://img.b2bpic.net/free-photo/modern-office-desk-composition_23-2147915838.jpg"
+      items={[
+        {
+          imageSrc: "http://img.b2bpic.net/free-photo/modern-office-desk-composition_23-2147915838.jpg",
+          title: "Marka Kimliği",
+        },
+        {
+          imageSrc: "http://img.b2bpic.net/free-photo/modern-office-desk-composition_23-2147915838.jpg",
+          title: "Ambalaj Tasarımı",
+        },
+        {
+          imageSrc: "http://img.b2bpic.net/free-photo/modern-office-desk-composition_23-2147915838.jpg",
+          title: "AEO Çözümleri",
+        },
+      ]}
       textAnimation="fade-blur"
     />
     </SectionErrorBoundary>
