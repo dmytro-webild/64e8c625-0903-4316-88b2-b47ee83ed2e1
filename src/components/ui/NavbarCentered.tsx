@@ -56,33 +56,40 @@ const NavbarCentered = ({ logo = defaultLogo, navItems, ctaButton }: NavbarCente
       <nav
         data-section="navbar"
         className={cls(
-          "fixed z-1000 top-0 left-0 w-full transition-all duration-500 ease-in-out",
-          isScrolled ? "h-15 bg-background/80 backdrop-blur-sm" : "h-20 bg-background/0 backdrop-blur-0"
+          "fixed z-1000 top-0 left-0 w-full transition-all duration-500 ease-in-out border-b border-white/10",
+          isScrolled ? "bg-background/90 backdrop-blur-md py-4" : "bg-transparent py-6"
         )}
       >
-        <div className="relative mx-auto flex items-center justify-between h-full w-content-width">
-          <a href="/" className="flex items-center">
-            <img
-              src={logoSrc}
-              alt="Yasemin Günhan"
-              className="h-8 md:h-10 w-auto object-contain"
-            />
-          </a>
+        <div className="mx-auto flex items-center justify-between gap-6 px-6 md:px-12 w-full max-w-[1800px]">
+          {/* Left Side: Brand Statement & Logo */}
+          <div className="flex items-center gap-6">
+            <a href="/" className="flex items-center shrink-0">
+              <img
+                src={logoSrc}
+                alt="Yasemin Günhan"
+                className="h-7 md:h-9 w-auto object-contain"
+              />
+            </a>
+            <span className="hidden xl:inline-block text-sm font-medium text-foreground/80 max-w-xs leading-snug">
+              Yasemin Günhan® builds brand systems, not just logos.
+            </span>
+          </div>
 
-          <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6">
+          {/* Vertical Divider & Navigation Links */}
+          <div className="hidden md:flex items-center gap-8 pl-8 border-l border-foreground/20">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className="text-base font-semibold text-foreground hover:opacity-70 transition-opacity"
+                className="text-sm md:text-base font-medium text-foreground hover:opacity-70 transition-opacity whitespace-nowrap"
               >
                 {item.name}
               </a>
             ))}
           </div>
 
-          <div className="flex items-center gap-2 xl:gap-3 2xl:gap-4">
+          <div className="flex items-center gap-3">
             <Button text={ctaButton.text} href={ctaButton.href} variant="primary" animate={false} />
 
             <div
