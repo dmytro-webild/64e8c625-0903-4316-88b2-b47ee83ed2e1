@@ -75,7 +75,7 @@ const NavbarCentered = ({ logo = defaultLogo, navItems, ctaButton }: NavbarCente
                 key={item.name}
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className="text-base text-foreground hover:opacity-70 transition-opacity"
+                className="text-base font-semibold text-foreground hover:opacity-70 transition-opacity"
               >
                 {item.name}
               </a>
