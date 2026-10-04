@@ -7,11 +7,11 @@
   /* @colorThemes/lightTheme/grayNavyBlue */
   --background: #0a0a0a;
   --card: #1a1a1a;
-  --foreground: #ffffffe6;
-  --primary-cta: #e6e6e6;
+  --foreground: #f0f8ffe6;
+  --primary-cta: #cee7ff;
   --primary-cta-text: #0a0a0a;
   --secondary-cta: #1a1a1a;
-  --secondary-cta-text: #ffffffe6;
+  --secondary-cta-text: #f0f8ffe6;
   --accent: #737373;
   --background-accent: #737373;
 
