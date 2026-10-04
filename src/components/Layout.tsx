@@ -38,7 +38,7 @@ export default function Layout() {
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarCentered
-          logo="https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791150079778-5ioj3223.png"
+          logo="https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791150305029-sbzk91sk.png"
           ctaButton={{
             text: "Projeni anlat",
             href: "#contact",
