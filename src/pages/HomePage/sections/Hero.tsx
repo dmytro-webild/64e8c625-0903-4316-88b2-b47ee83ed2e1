@@ -72,7 +72,7 @@ const HeroInline = () => {
           </div>
 
           <TextAnimation
-            text={"Stratejik Tasarım ve AEO ile Markanızı Dijital Liderliğe Dönüştürün."}
+            text={"Markanızın Büyümesini ve Dijital Görünürlüğünü Artıran Stratejik Tasarım."}
             variant={"fade-blur"}
             gradientText={false}
             tag="h1"
