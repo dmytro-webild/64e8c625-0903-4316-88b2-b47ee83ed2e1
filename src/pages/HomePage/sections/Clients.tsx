@@ -3,8 +3,8 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 const clients = [
   { name: "LUMINARIAN", subtitle: "GUZELLIK" },
   { name: "VIRA BLACK SEA", subtitle: "PERAKENDE" },
-  { name: "NEXAFIN", subtitle: "Finans&Finans&Teknoloji" },
-  { name: "GUNHAN MARINE", subtitle: "Servıce" },
+  { name: "NEXAFIN", subtitle: "Finans&Teknoloji" },
+  { name: "GUNHAN MARINE", subtitle: "Denizcilik" },
   { name: "NEXTPHASE", subtitle: "Lojistik" },
   { name: "UNBEACOMING DREAM CACHER", subtitle: "Perakende" },
   { name: "AKBANK", subtitle: "Finans" },
