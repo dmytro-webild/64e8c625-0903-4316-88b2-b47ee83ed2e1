@@ -14,7 +14,7 @@ export default function ServicesSection(): React.JSX.Element {
                 title="Stratejik Tasarım Hizmetleri"
                 description="Modern markalar için uçtan uca tasarım ve görünürlük çözümleri."
                 items={[
-                  { title: "Marka kimliği", description: "Sistem odaklı, uzun vadeli ve ölçeklenebilir marka stratejileri ve görsel kimlik.", imageSrc: "https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791228214772-a1nipfo1.png" },
+                  { title: "Marka kimliği", description: "Sistem odaklı, uzun vadeli ve ölçeklenebilir marka stratejileri ve görsel kimlik.", imageSrc: "https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791231718126-jve8zi2t.png" },
                   { title: "Ambalaj tasarımı", description: "Ürününüzün hikâyesini rafta anlatan, tüketiciyle ilk temasta etki yaratan özgün ambalaj çözümleri.", imageSrc: "https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791228282625-jvg6w2pq.png" },
                   { title: "Web sitesi", description: "Minimalist, kullanıcı dostu ve dönüşüm odaklı dijital deneyimler tasarlıyorum.", imageSrc: "https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791228325384-l4rfmff6.png" },
                   { title: "Ek hizmet: AEO", description: "Markanızın yapay zekâ tabanlı arama motorlarında görünür olmasını sağlayan teknik ve içerik optimizasyonu.", imageSrc: "http://img.b2bpic.net/free-vector/flat-design-vhs-cover-template_23-2149839498.jpg" }
