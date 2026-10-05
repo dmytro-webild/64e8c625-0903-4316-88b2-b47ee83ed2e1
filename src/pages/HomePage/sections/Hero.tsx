@@ -80,7 +80,7 @@ const HeroInline = () => {
           />
 
           <TextAnimation
-            text={"Marka kimliği, ambalaj ve AEO odaklı tasarım çözümleriyle büyümenizi hızlandırın."}
+            text={"Karmaşık ve tutarsız marka algısını sonlandırın; aramalarda ve yapay zekâda öne çıkarak satış ve dönüşüm oranlarınızı artırın."}
             variant={"fade-blur"}
             gradientText={false}
             tag="p"
