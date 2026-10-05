@@ -52,7 +52,7 @@ const HeroInline = () => {
   return (
     <section
       aria-label="Hero section"
-      className="relative overflow-hidden flex flex-col justify-between mb-20 w-full h-svh"
+      className="relative overflow-hidden flex flex-col justify-between mb-20 w-full min-h-svh py-8"
     >
       <HeroBackgroundSlot />
       <ImageOrVideo
@@ -76,7 +76,7 @@ const HeroInline = () => {
             variant={"fade-blur"}
             gradientText={false}
             tag="h1"
-            className="text-[40px] md:text-[64px] lg:text-[88px] leading-[1.05] font-bold text-balance text-white"
+            className="text-3xl md:text-5xl lg:text-6xl leading-tight font-bold text-balance text-white"
           />
 
           <TextAnimation
