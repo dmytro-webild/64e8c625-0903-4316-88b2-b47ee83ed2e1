@@ -4,9 +4,9 @@ const clients = [
   { name: "LUMINARIAN", subtitle: "GUZELLIK" },
   { name: "VIRA BLACK SEA", subtitle: "SEAFOOD" },
   { name: "NEXAFIN", subtitle: "Teknoloji" },
-  { name: "GUNHAN MARINE", subtitle: "Tarım & Gıda" },
-  { name: "EGE", subtitle: "Lojistik" },
-  { name: "MİGROS", subtitle: "Perakende" },
+  { name: "GUNHAN MARINE", subtitle: "Servıce" },
+  { name: "NEXTPHASE", subtitle: "Lojistik" },
+  { name: "UNBEACOMING DREAM CACHER", subtitle: "Perakende" },
   { name: "AKBANK", subtitle: "Finans" },
   { name: "ÇİMSA", subtitle: "Sanayi" }
 ];
