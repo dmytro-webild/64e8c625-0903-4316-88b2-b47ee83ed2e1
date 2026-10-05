@@ -10,10 +10,16 @@ export default function AboutSection(): React.JSX.Element {
     <div id="about" data-section="about">
             <SectionErrorBoundary name="about">
               <AboutTextSplit
-                title="Hakkımda"
+                title="Markayı sistem olarak kuruyorum."
+                badge="Yasemin Günhan"
                 descriptions={[
-                  "Yasemin Günhan olarak, markaların sadece görsel değil, işlevsel ve stratejik bir sisteme sahip olmaları gerektiğine inanıyorum. Tasarım yaklaşımım; derin analiz, estetik disiplin ve modern teknolojilerin sentezidir.",              "Amacım, karmaşık marka hikâyelerini yalın ve etkileyici bir görsel dile dönüştürerek, markanızın hedef kitlesiyle kalıcı bağlar kurmasını sağlamaktır."
+                  "Ben Yasemin Günhan, marka ve ambalaj tasarımcısıyım. Logo tek başına marka değildir. Renk, yazı, dil ve ambalaj aynı sistemin parçaları olarak çalıştığında marka tutarlı görünür ve hatırlanır.",
+                  "İsimlendirmeden marka rehberine kadar bütün kimliği tek elden kuruyorum. Bir fintech girişimi için isim, logo, renk ve yazı sistemi ile marka rehberini baştan sona ben tasarladım.",
+                  "Bir markanın bulunabilmesini de tasarımın parçası sayıyorum."
                 ]}
+                image="https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791230325347-mgsocr89.jpg"
+                imageUrl="https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791230325347-mgsocr89.jpg"
+                imageSrc="https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791230325347-mgsocr89.jpg"
                 textAnimation="fade-blur"
               />
             </SectionErrorBoundary>
