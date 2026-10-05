@@ -109,6 +109,10 @@ const ContactInline = () => {
               </div>
             </form>
 
+            <p className="text-xs text-foreground/70 text-center">
+              We typically respond within 24 hours
+            </p>
+
             <div className="flex flex-wrap justify-center gap-3 pt-4">
               <Button text={primaryButton.text} href={primaryButton.href} variant="primary" />
               <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary" animationDelay={0.1} />
