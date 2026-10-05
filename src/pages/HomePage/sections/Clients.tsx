@@ -6,7 +6,7 @@ const clients = [
   { name: "NEXAFIN", subtitle: "Finans&Teknoloji" },
   { name: "GUNHAN MARINE", subtitle: "Denizcilik" },
   { name: "NEXTPHASE", subtitle: "Lojistik" },
-  { name: "UNBEACOMING DREAM CACHER", subtitle: "Perakende" },
+  { name: "UNBEACOMING DREAM CACHER", subtitle: "Wellness" },
   { name: "AKBANK", subtitle: "Finans" },
   { name: "ÇİMSA", subtitle: "Sanayi" }
 ];
