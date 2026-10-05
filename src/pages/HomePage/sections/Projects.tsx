@@ -14,8 +14,8 @@ export default function ProjectsSection(): React.JSX.Element {
                 title="Seçilmiş Çalışmalar"
                 description="Markaların dünyasına dair stratejik ve estetik çıktılar."
                 items={[
-                  { title: "Günhan Marine", description: "Denizcilik sektörüne yönelik stratejik marka kimliği.", href: "#", imageSrc: "http://img.b2bpic.net/free-photo/view-paper-boat_23-2150785152.jpg" },
-                  { title: "Vira Blacksea", description: "Modern ve minimalist deniz ürünleri ambalaj tasarımı.", href: "#", imageSrc: "http://img.b2bpic.net/free-photo/marine-composition-with-rope_23-2147804761.jpg" },
+                  { title: "Günhan Marine", description: "Denizcilik sektörüne yönelik stratejik marka kimliği.", href: "#", imageSrc: "https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791229381381-exwwdmsr.jpg" },
+                  { title: "Vira Blacksea", description: "Modern ve minimalist deniz ürünleri ambalaj tasarımı.", href: "#", imageSrc: "https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791229346384-sod75vac.png" },
                   { title: "Alesta Marine", description: "Sektörel dijital görünürlük ve web tasarımı.", href: "#", imageSrc: "http://img.b2bpic.net/free-vector/flat-design-vhs-cover-template_23-2149875857.jpg" },
                   { title: "Coming Soon", description: "Yeni projeler çok yakında.", href: "#", imageSrc: "http://img.b2bpic.net/free-vector/elegant-furniture-logo-concept_23-2148457463.jpg" },
                   { title: "Coming Soon", description: "Yeni projeler çok yakında.", href: "#", imageSrc: "http://img.b2bpic.net/free-photo/trendy-color-swatches-with-different-elements_23-2150169885.jpg" },
