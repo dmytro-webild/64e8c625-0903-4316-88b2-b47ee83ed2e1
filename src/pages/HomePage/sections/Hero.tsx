@@ -56,7 +56,7 @@ const HeroInline = () => {
     >
       <HeroBackgroundSlot />
       <ImageOrVideo
-        imageSrc={"https://images.unsplash.com/photo-1600508774634-4e11d34730e2?auto=format&fit=crop&w=2000&q=80"}
+        imageSrc={"https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791228546524-dw186whp.png"}
         className="absolute inset-0 object-cover w-full h-full rounded-none"
       />
 
