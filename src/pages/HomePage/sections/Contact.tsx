@@ -21,7 +21,7 @@ const ContactInline = () => {
           <div className="flex flex-col items-center gap-8 py-12 px-6 md:px-12 rounded card max-w-3xl mx-auto">
             <div className="flex flex-col items-center gap-2 text-center">
               <div className="px-3 py-1 mb-1 text-sm card rounded w-fit text-foreground">
-                <p>{"İletişim Formu"}</p>
+                <p>{"Schedule Your Free Consultation"}</p>
               </div>
 
               <TextAnimation
@@ -104,7 +104,7 @@ const ContactInline = () => {
                   ⚡ 24 saat içinde e-posta ile dönüş garantisi
                 </span>
                 <button type="submit" className="primary-button px-6 py-2.5 rounded text-sm font-medium cursor-pointer">
-                  Gönder
+                  Schedule Your Free Consultation
                 </button>
               </div>
             </form>
