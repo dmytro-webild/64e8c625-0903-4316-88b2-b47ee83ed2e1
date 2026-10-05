@@ -10,7 +10,7 @@ import ImageOrVideo from "@/components/ui/ImageOrVideo";
 import AvatarGroup from "@/components/ui/AvatarGroup";
 
 const primaryButton = {
-  text: "Çalışmalara bak",
+  text: "Hemen Başlayın",
   href: "#projects"
 };
 const secondaryButton = {
