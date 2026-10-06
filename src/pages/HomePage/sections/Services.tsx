@@ -17,7 +17,7 @@ export default function ServicesSection(): React.JSX.Element {
                   { title: "Marka kimliği", description: "Sistem odaklı, uzun vadeli ve ölçeklenebilir marka stratejileri ve görsel kimlik.", imageSrc: "https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791231718126-jve8zi2t.png" },
                   { title: "Ambalaj tasarımı", description: "Ürününüzün hikâyesini rafta anlatan, tüketiciyle ilk temasta etki yaratan özgün ambalaj çözümleri.", imageSrc: "https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791228282625-jvg6w2pq.png" },
                   { title: "Web sitesi", description: "Minimalist, kullanıcı dostu ve dönüşüm odaklı dijital deneyimler tasarlıyorum.", imageSrc: "https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791228325384-l4rfmff6.png" },
-                  { title: "Ek hizmet: AEO", description: "Markanızın yapay zekâ tabanlı arama motorlarında görünür olmasını sağlayan teknik ve içerik optimizasyonu.", imageSrc: "http://img.b2bpic.net/free-vector/flat-design-vhs-cover-template_23-2149839498.jpg" }
+                  { title: "Ek hizmet: AEO", description: "Markanızın yapay zekâ tabanlı arama motorlarında görünür olmasını sağlayan teknik ve içerik optimizasyonu.", imageSrc: "https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791271815865-px8odk7w.png" }
                 ]}
                 textAnimation="fade-blur"
               />
