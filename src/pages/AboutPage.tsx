@@ -1,92 +1,18 @@
-import Button from "@/components/ui/Button";
-import TextAnimation from "@/components/ui/TextAnimation";
-import ScrollReveal from "@/components/ui/ScrollReveal";
+// AUTO-GENERATED shell by per-section-migrate.
+// Section bodies live in the sibling sections/ folder (one file per section).
+// Edit those section files directly. Non-block content (wrappers,
+// non-inlinable sections) is preserved inline; extracted section blocks
+// become component refs.
 
-export default function HakkımdaPage() {
+import React from 'react';
+import HakkmdaTextSplitSection from './AboutPage/sections/HakkmdaTextSplit';
+import ContactCtaSection from './AboutPage/sections/ContactCta';
+
+export default function AboutPage(): React.JSX.Element {
   return (
-    <>
-      <div data-webild-section="HakkımdaTextSplit">
-        <section aria-label="Hakkımda section" className="">
-          <div className="flex flex-col mx-auto w-content-width">
-            <div className="flex flex-col md:flex-row gap-3">
-              <div className="w-full md:w-1/2">
-                <TextAnimation
-                  text="Yasemin Günhan — Marka Kimliği & Ambalaj Tasarımcısı"
-                  variant="slide-up"
-                  gradientText={true}
-                  tag="h2"
-                  className="text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-balance"
-                />
-              </div>
-              <div className="flex flex-col gap-2 w-full md:w-1/2">
-                <TextAnimation
-                  key={0}
-                  text="Logo, renk, yazı, ambalaj ve marka rehberini tek bir bütüncül tasarım sistemi olarak kuruyorum. Tasarımın yanı sıra markanızın yapay zekâ destekli aramalarda öne çıkmasını sağlıyorum."
-                  variant="slide-up"
-                  gradientText={false}
-                  tag="p"
-                  className="text-xl md:text-2xl leading-snug text-balance"
-                />
-                <TextAnimation
-                  key={1}
-                  text="Logo tek başına marka değildir. İsimlendirmeden marka rehberine kadar tüm kimliği tek elden tasarlıyor, Türkiye ve yurt dışındaki markalarla süreçleri bizzat yürütüyorum."
-                  variant="slide-up"
-                  gradientText={false}
-                  tag="p"
-                  className="text-xl md:text-2xl leading-snug text-balance"
-                />
-                <TextAnimation
-                  key={2}
-                  text="Vizyonum; markaların ajans karmaşasına girmeden özgün ve güçlü bir tasarıma kavuşmasıdır. Tasarıma ek olarak AEO (yapay zekâ arama optimizasyonu) ile dijital görünürlüğü artırıyorum."
-                  variant="slide-up"
-                  gradientText={false}
-                  tag="p"
-                  className="text-xl md:text-2xl leading-snug text-balance"
-                />
-                <TextAnimation
-                  key={3}
-                  text="Saat bazlı değil, kapsamı ve süreci net paketlerle çalışıyorum. İletişimi sade, süreci şeffaf tutarak markanızı hedeflerine ulaştırıyorum."
-                  variant="slide-up"
-                  gradientText={false}
-                  tag="p"
-                  className="text-xl md:text-2xl leading-snug text-balance"
-                />
-                <div className="flex flex-wrap gap-3 mt-2 md:mt-3">
-                  <Button text="Projenizi Anlatın" href="/contact" variant="primary" />
-                  <Button text="Portföyü İnceleyin" href="/#portfolio" variant="secondary" />
-                </div>
-              </div>
-            </div>
-            <div className="w-full border-b border-foreground/5" />
-          </div>
-        </section>
-      </div>
-      <div data-webild-section="ContactCta">
-        <section aria-label="Contact section" className="">
-          <div className="w-content-width mx-auto">
-            <ScrollReveal variant="slide-up">
-              <div className="flex flex-col items-center gap-8 px-8 rounded card">
-                <div className="flex flex-col items-center gap-2">
-                  <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
-                    <p>Birlikte Çalışalım</p>
-                  </div>
-                  <TextAnimation
-                    text="Markanız için özgün, tutarlı ve güçlü bir tasarım sistemi oluşturalım. Projenizin detaylarını paylaşın, süreci birlikte netleştirelim."
-                    variant="slide-up"
-                    gradientText={true}
-                    tag="h2"
-                    className="md:max-w-8/10 text-5xl 2xl:text-6xl leading-[1.15] font-semibold text-center text-balance"
-                  />
-                  <div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3">
-                    <Button text="Projenizi Anlatın" href="/contact" variant="primary" />
-                    <Button text="Portföyü İnceleyin" href="/#portfolio" variant="secondary" />
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
-        </section>
-      </div>
+<>
+      <HakkmdaTextSplitSection />
+      <ContactCtaSection />
     </>
   );
 }
