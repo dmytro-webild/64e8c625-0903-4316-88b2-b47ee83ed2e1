@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 import TextAnimation from "@/components/ui/TextAnimation";
 import ImageOrVideo from "@/components/ui/ImageOrVideo";
 
-type AboutMediaOverlayProps = {
+type HakkımdaMediaOverlayProps = {
   tag: string;
   title: string;
   description: string;
@@ -12,7 +12,7 @@ type AboutMediaOverlayProps = {
   textAnimation: "slide-up" | "fade-blur" | "fade";
 } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never });
 
-const AboutMediaOverlay = ({
+const HakkımdaMediaOverlay = ({
   tag,
   title,
   description,
@@ -21,9 +21,9 @@ const AboutMediaOverlay = ({
   imageSrc,
   videoSrc,
   textAnimation,
-}: AboutMediaOverlayProps) => {
+}: HakkımdaMediaOverlayProps) => {
   return (
-    <section aria-label="About section" className="py-20">
+    <section aria-label="Hakkımda section" className="py-20">
       <div className="relative flex items-center justify-center py-8 md:py-12 mx-auto w-content-width rounded overflow-hidden">
         <div className="absolute inset-0">
           <ImageOrVideo imageSrc={imageSrc} videoSrc={videoSrc} />
@@ -71,4 +71,4 @@ const AboutMediaOverlay = ({
   );
 };
 
-export default AboutMediaOverlay;
+export default HakkımdaMediaOverlay;
