@@ -4,7 +4,7 @@ import Button from "@/components/ui/Button";
 import TextAnimation from "@/components/ui/TextAnimation";
 import ImageOrVideo from "@/components/ui/ImageOrVideo";
 
-type AboutParallaxHighlightProps = {
+type HakkımdaParallaxHighlightProps = {
   tag: string;
   title: string;
   titleHighlight?: string;
@@ -16,7 +16,7 @@ type AboutParallaxHighlightProps = {
 } & ({ frontImageSrc: string; frontVideoSrc?: never } | { frontVideoSrc: string; frontImageSrc?: never }) &
   ({ backImageSrc: string; backVideoSrc?: never } | { backVideoSrc: string; backImageSrc?: never });
 
-const AboutParallaxHighlight = ({ tag, title, titleHighlight, description, primaryButton, secondaryButton, frontImageSrc, frontVideoSrc, backImageSrc, backVideoSrc, badge, textAnimation }: AboutParallaxHighlightProps) => {
+const HakkımdaParallaxHighlight = ({ tag, title, titleHighlight, description, primaryButton, secondaryButton, frontImageSrc, frontVideoSrc, backImageSrc, backVideoSrc, badge, textAnimation }: HakkımdaParallaxHighlightProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -30,7 +30,7 @@ const AboutParallaxHighlight = ({ tag, title, titleHighlight, description, prima
   return (
     <section
       ref={sectionRef}
-      aria-label="About section"
+      aria-label="Hakkımda section"
       className="relative py-20"
     >
       <div className="mx-auto w-content-width">
@@ -111,4 +111,4 @@ const AboutParallaxHighlight = ({ tag, title, titleHighlight, description, prima
   );
 };
 
-export default AboutParallaxHighlight;
+export default HakkımdaParallaxHighlight;
