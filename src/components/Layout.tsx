@@ -30,7 +30,9 @@ export default function Layout() {
     {
       "name": "İletişim",
       "href": "#contact"
-    }
+    },
+    { name: "About", href: "/about" },
+
   ];
 
   return (
