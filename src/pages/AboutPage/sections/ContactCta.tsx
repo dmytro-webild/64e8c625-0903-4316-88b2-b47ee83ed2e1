@@ -3,36 +3,20 @@
 
 import React from 'react';
 import Button from "@/components/ui/Button";
-import TextAnimation from "@/components/ui/TextAnimation";
-import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function ContactCtaSection(): React.JSX.Element {
   return (
     <div data-webild-section="ContactCta">
-            <section aria-label="Contact section" className="">
-              <div className="w-content-width mx-auto">
-                <ScrollReveal variant="slide-up">
-                  <div className="flex flex-col items-center py-12 md:py-16 px-6 md:px-12 rounded card">
-                    <div className="flex flex-col items-center gap-6">
-                      <div className="px-3 py-1 text-sm card rounded w-fit">
-                        <p>Birlikte Çalışalım</p>
-                      </div>
-                      <TextAnimation
-                        text="Markanız için özgün, tutarlı ve güçlü bir tasarım sistemi oluşturalım. Projenizin detaylarını paylaşın, süreci birlikte netleştirelim."
-                        variant="slide-up"
-                        gradientText={true}
-                        tag="h2"
-                        className="md:max-w-4xl text-3xl md:text-5xl 2xl:text-6xl leading-[1.25] font-semibold text-center text-balance"
-                      />
-                      <div className="flex flex-wrap justify-center gap-4 mt-2 md:mt-4">
-                        <Button text="Projenizi Anlatın" href="/contact" variant="primary" />
-                        <Button text="Portföyü İnceleyin" href="/#portfolio" variant="secondary" />
-                      </div>
-                    </div>
-                  </div>
-                </ScrollReveal>
-              </div>
-            </section>
+      <section aria-label="Kapanış" className="w-full bg-white border-t border-gray-200 py-16 md:py-20">
+        <div className="w-content-width mx-auto flex flex-col items-center text-center px-4">
+          <h2 className="font-serif text-[28px] sm:text-[36px] font-semibold text-foreground text-balance leading-snug">
+            Markanız için bir tasarım sistemi kuralım.
+          </h2>
+          <div className="mt-8 w-full sm:w-auto">
+            <Button text="Projenizi anlatın" href="/contact" variant="primary" className="w-full sm:w-auto text-center justify-center" />
           </div>
+        </div>
+      </section>
+    </div>
   );
 }
