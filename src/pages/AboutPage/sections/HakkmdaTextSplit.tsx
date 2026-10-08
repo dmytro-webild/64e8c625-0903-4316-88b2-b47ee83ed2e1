@@ -20,7 +20,7 @@ export default function HakkmdaTextSplitSection(): React.JSX.Element {
             </div>
             <div className="md:col-span-5 w-full">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
+                src="https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791464902989-frz9pcxa.jpg"
                 alt="Yasemin Günhan"
                 className="w-full aspect-[4/5] object-cover rounded-none"
               />
