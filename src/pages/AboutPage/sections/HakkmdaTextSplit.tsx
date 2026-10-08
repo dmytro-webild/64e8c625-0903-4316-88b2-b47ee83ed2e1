@@ -13,7 +13,7 @@ export default function HakkmdaTextSplitSection(): React.JSX.Element {
                 <div className="flex flex-col md:flex-row gap-3">
                   <div className="w-full md:w-1/2">
                     <TextAnimation
-                      text="Yasemin Günhan — Marka Kimliği & Ambalaj Tasarımcısı"
+                      text="Yasemin Günhan Marka Kimliği & "
                       variant="slide-up"
                       gradientText={true}
                       tag="h2"
