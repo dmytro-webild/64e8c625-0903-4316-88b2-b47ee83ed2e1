@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 import TextAnimation from "@/components/ui/TextAnimation";
 import ImageOrVideo from "@/components/ui/ImageOrVideo";
 
-type AboutTestimonialProps = {
+type HakkımdaTestimonialProps = {
   tag: string;
   quote: string;
   author: string;
@@ -11,7 +11,7 @@ type AboutTestimonialProps = {
   textAnimation: "slide-up" | "fade-blur" | "fade";
 } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never });
 
-const AboutTestimonial = ({
+const HakkımdaTestimonial = ({
   tag,
   quote,
   author,
@@ -19,7 +19,7 @@ const AboutTestimonial = ({
   imageSrc,
   videoSrc,
   textAnimation,
-}: AboutTestimonialProps) => {
+}: HakkımdaTestimonialProps) => {
   return (
     <section aria-label="Testimonial section" className="py-20">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-5 mx-auto w-content-width">
@@ -57,4 +57,4 @@ const AboutTestimonial = ({
   );
 };
 
-export default AboutTestimonial;
+export default HakkımdaTestimonial;
