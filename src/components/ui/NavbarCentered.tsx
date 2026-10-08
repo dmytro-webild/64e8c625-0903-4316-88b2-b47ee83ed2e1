@@ -10,7 +10,7 @@ interface NavbarCenteredProps {
   ctaButton: { text: string; href: string };
 }
 
-const defaultLogo = "https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791150079778-5ioj3223.png";
+const defaultLogo = "https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791150305029-sbzk91sk.png";
 
 const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, onClose?: () => void) => {
   if (href.startsWith("#")) {
