@@ -2,93 +2,91 @@
 // file as the canonical source for the "HakkımdaTextSplit" section.
 
 import React from 'react';
-import Button from "@/components/ui/Button";
-import TextAnimation from "@/components/ui/TextAnimation";
 
 export default function HakkmdaTextSplitSection(): React.JSX.Element {
   return (
     <div data-webild-section="HakkımdaTextSplit">
-  <section aria-label="Hakkımda" className="w-full pt-28 pb-16 md:pt-36 md:pb-24 bg-background">
-    <div className="w-content-width mx-auto flex flex-col gap-16 md:gap-24">
-      {/* Top Area: 2 Columns */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
-        <div className="md:col-span-7 flex flex-col gap-6 md:pr-6">
-          <h1 className="font-serif text-[36px] md:text-[56px] font-semibold text-foreground leading-[1.15] text-balance">
-            Yasemin Günhan, marka kimliği ve ambalaj tasarımcısı
-          </h1>
-          <p className="text-[18px] leading-[1.6] text-foreground/80 text-balance mt-2">
-            Logo, renk, yazı, ambalaj ve marka rehberini tek bir tasarım sistemi olarak kuruyorum. Tasarımın yanında, markanızın yapay zekâ destekli aramalarda bulunmasını da sağlıyorum.
-          </p>
-        </div>
-        <div className="md:col-span-5 w-full">
-          <img
-            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
-            alt="Yasemin Günhan"
-            className="w-full aspect-[4/5] object-cover rounded-none"
-          />
-        </div>
-      </div>
+      <section aria-label="Hakkımda" className="w-full bg-background">
+        <div className="w-content-width mx-auto flex flex-col">
+          {/* Top Area: 2 Columns */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div className="md:col-span-7 flex flex-col gap-6 md:pr-6">
+              <h1 className="font-serif text-[36px] md:text-[56px] font-semibold text-foreground leading-[1.15] text-balance">
+                Yasemin Günhan, marka kimliği ve ambalaj tasarımcısı
+              </h1>
+              <p className="text-[18px] leading-[1.6] text-foreground/80 text-balance mt-2">
+                Logo, renk, yazı, ambalaj ve marka rehberini tek bir tasarım sistemi olarak kuruyorum. Tasarımın yanında, markanızın yapay zekâ destekli aramalarda bulunmasını da sağlıyorum.
+              </p>
+            </div>
+            <div className="md:col-span-5 w-full">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
+                alt="Yasemin Günhan"
+                className="w-full aspect-[4/5] object-cover rounded-none"
+              />
+            </div>
+          </div>
 
-      {/* Rows with 64px spacing and 1px border lines */}
-      <div className="flex flex-col">
-        {/* Row 1 */}
-        <div className="pt-16 pb-16 border-t border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-start">
-          <div className="md:col-span-4">
-            <h2 className="font-serif text-[28px] font-semibold text-foreground leading-snug">
-              Yasemin Günhan kimdir?
-            </h2>
-          </div>
-          <div className="md:col-span-8">
-            <p className="text-[18px] leading-[1.6] text-foreground/80">
-              Ben Yasemin Günhan, marka kimliği ve ambalaj tasarımcısıyım. Logo tek başına marka değildir. Renk, yazı, dil ve ambalaj aynı sistemin parçaları olarak çalıştığında marka tutarlı görünür ve hatırlanır. İsimlendirmeden marka rehberine kadar bütün kimliği tek elden tasarlıyorum. Türkiye'deki ve yurt dışındaki markalarla çalışıyorum, her işi baştan sona bizzat yürütüyorum.
-            </p>
-          </div>
-        </div>
+          {/* Rows with 64px spacing and 1px border lines */}
+          <div className="flex flex-col">
+            {/* Row 1 */}
+            <div className="border-t border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+              <div className="md:col-span-4">
+                <h2 className="font-serif text-[28px] font-semibold text-foreground leading-snug">
+                  Yasemin Günhan kimdir?
+                </h2>
+              </div>
+              <div className="md:col-span-8">
+                <p className="text-[18px] leading-[1.6] text-foreground/80">
+                  Ben Yasemin Günhan, marka kimliği ve ambalaj tasarımcısıyım. Logo tek başına marka değildir. Renk, yazı, dil ve ambalaj aynı sistemin parçaları olarak çalıştığında marka tutarlı görünür ve hatırlanır. İsimlendirmeden marka rehberine kadar bütün kimliği tek elden tasarlıyorum. Türkiye'deki ve yurt dışındaki markalarla çalışıyorum, her işi baştan sona bizzat yürütüyorum.
+                </p>
+              </div>
+            </div>
 
-        {/* Row 2 */}
-        <div className="pt-16 pb-16 border-t border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-start">
-          <div className="md:col-span-4">
-            <h2 className="font-serif text-[28px] font-semibold text-foreground leading-snug">
-              Vizyonum nedir?
-            </h2>
-          </div>
-          <div className="md:col-span-8">
-            <p className="text-[18px] leading-[1.6] text-foreground/80">
-              Küçük ve orta ölçekli her markanın, büyük bir ajansa ihtiyaç duymadan özgün, tutarlı ve güçlü bir tasarıma sahip olmasını istiyorum. İyi tasarlanmış bir marka, ilk bakışta kendini tanıtır ve güven verir.
-            </p>
-          </div>
-        </div>
+            {/* Row 2 */}
+            <div className="border-t border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+              <div className="md:col-span-4">
+                <h2 className="font-serif text-[28px] font-semibold text-foreground leading-snug">
+                  Vizyonum nedir?
+                </h2>
+              </div>
+              <div className="md:col-span-8">
+                <p className="text-[18px] leading-[1.6] text-foreground/80">
+                  Küçük ve orta ölçekli her markanın, büyük bir ajansa ihtiyaç duymadan özgün, tutarlı ve güçlü bir tasarıma sahip olmasını istiyorum. İyi tasarlanmış bir marka, ilk bakışta kendini tanıtır ve güven verir.
+                </p>
+              </div>
+            </div>
 
-        {/* Row 3 */}
-        <div className="pt-16 pb-16 border-t border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-start">
-          <div className="md:col-span-4">
-            <h2 className="font-serif text-[28px] font-semibold text-foreground leading-snug">
-              Misyonum nedir?
-            </h2>
-          </div>
-          <div className="md:col-span-8">
-            <p className="text-[18px] leading-[1.6] text-foreground/80">
-              Markaları tasarım odağında, kısa ve net bir süreçle kurmak. Önce markanın kim olduğunu ve müşterisine ne söylemesi gerektiğini netleştiririm. Sonra kimliği ve ambalajı tasarlarım. Tasarımın üzerine, isteyen markalar için yapay zekâ destekli arama (AEO) çalışması ekleyerek müşterilerin Google'da ve yapay zekâ asistanlarında markayı bulmasını sağlarım. Her projede kapsamı net, dili sade ve süreci şeffaf tutarım.
-            </p>
-          </div>
-        </div>
+            {/* Row 3 */}
+            <div className="border-t border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+              <div className="md:col-span-4">
+                <h2 className="font-serif text-[28px] font-semibold text-foreground leading-snug">
+                  Misyonum nedir?
+                </h2>
+              </div>
+              <div className="md:col-span-8">
+                <p className="text-[18px] leading-[1.6] text-foreground/80">
+                  Markaları tasarım odağında, kısa ve net bir süreçle kurmak. Önce markanın kim olduğunu ve müşterisine ne söylemesi gerektiğini netleştiririm. Sonra kimliği ve ambalajı tasarlarım. Tasarımın üzerine, isteyen markalar için yapay zekâ destekli arama (AEO) çalışması ekleyerek müşterilerin Google'da ve yapay zekâ asistanlarında markayı bulmasını sağlarım. Her projede kapsamı net, dili sade ve süreci şeffaf tutarım.
+                </p>
+              </div>
+            </div>
 
-        {/* Row 4 */}
-        <div className="pt-16 pb-16 border-t border-b border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-start">
-          <div className="md:col-span-4">
-            <h2 className="font-serif text-[28px] font-semibold text-foreground leading-snug">
-              Nasıl çalışıyorum?
-            </h2>
-          </div>
-          <div className="md:col-span-8">
-            <p className="text-[18px] leading-[1.6] text-foreground/80">
-              Saat başı değil, kapsamı belli paketlerle çalışırım. Önce kısa bir görüşmede markanızı ve hedeflerinizi dinlerim, sonra kapsamı ve süreci netleştirip teklifimi sunarım.
-            </p>
+            {/* Row 4 */}
+            <div className="border-t border-b border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+              <div className="md:col-span-4">
+                <h2 className="font-serif text-[28px] font-semibold text-foreground leading-snug">
+                  Nasıl çalışıyorum?
+                </h2>
+              </div>
+              <div className="md:col-span-8">
+                <p className="text-[18px] leading-[1.6] text-foreground/80">
+                  Saat başı değil, kapsamı belli paketlerle çalışırım. Önce kısa bir görüşmede markanızı ve hedeflerinizi dinlerim, sonra kapsamı ve süreci netleştirip teklifimi sunarım.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-  </section>
-</div>
   );
 }
