@@ -12,9 +12,9 @@ export default function ContactCtaSection(): React.JSX.Element {
             <section aria-label="Contact section" className="">
               <div className="w-content-width mx-auto">
                 <ScrollReveal variant="slide-up">
-                  <div className="flex flex-col items-center gap-8 px-8 rounded card">
-                    <div className="flex flex-col items-center gap-2">
-                      <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
+                  <div className="flex flex-col items-center py-12 md:py-16 px-6 md:px-12 rounded card">
+                    <div className="flex flex-col items-center gap-6">
+                      <div className="px-3 py-1 text-sm card rounded w-fit">
                         <p>Birlikte Çalışalım</p>
                       </div>
                       <TextAnimation
@@ -22,9 +22,9 @@ export default function ContactCtaSection(): React.JSX.Element {
                         variant="slide-up"
                         gradientText={true}
                         tag="h2"
-                        className="md:max-w-8/10 text-5xl 2xl:text-6xl leading-[1.15] font-semibold text-center text-balance"
+                        className="md:max-w-4xl text-3xl md:text-5xl 2xl:text-6xl leading-[1.25] font-semibold text-center text-balance"
                       />
-                      <div className="flex flex-wrap justify-center gap-3 mt-2 md:mt-3">
+                      <div className="flex flex-wrap justify-center gap-4 mt-2 md:mt-4">
                         <Button text="Projenizi Anlatın" href="/contact" variant="primary" />
                         <Button text="Portföyü İnceleyin" href="/#portfolio" variant="secondary" />
                       </div>
