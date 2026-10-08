@@ -9,46 +9,44 @@ export default function Layout() {
   const navItems = [
     {
       "name": "Ana sayfa",
-      "href": "#hero"
+      "href": "/"
     },
     {
       "name": "Çalışmalar",
-      "href": "#projects"
+      "href": "/#projects"
     },
     {
       "name": "Hizmetler",
-      "href": "#services"
+      "href": "/#services"
     },
     {
       "name": "Hakkımda",
-      "href": "#about"
+      "href": "/hakkimda"
     },
     {
       "name": "Yazılar",
-      "href": "#blog"
+      "href": "/#blog"
     },
     {
       "name": "İletişim",
-      "href": "#contact"
+      "href": "/#contact"
     },
-    { name: "About", href: "/about" },
-
   ];
 
   return (
-    <StyleProvider buttonVariant="magnetic" siteBackground="gridDots" heroBackground="cornerGlow">
+    <StyleProvider buttonVariant="default" siteBackground="gridDots" heroBackground="cornerGlow">
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarCentered
-          logo="https://storage.googleapis.com/webild/users/user_3KFFa5W6OG5DQ11YaXgrbTF1V4I/uploaded-1791150305029-sbzk91sk.png"
+          logo=""
           ctaButton={{
-            text: "Projeni anlat",
-            href: "#contact",
+            text: "Projenizi anlatın",
+            href: "/#contact",
           }}
           navItems={navItems}
         />
       </SectionErrorBoundary>
-      <main className="flex-grow">
+      <main className="flex-grow pt-[80px]">
         <Outlet />
       </main>
       <SectionErrorBoundary name="footer">

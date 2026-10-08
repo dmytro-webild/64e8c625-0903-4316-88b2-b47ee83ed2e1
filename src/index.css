@@ -1,22 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "./styles/masks.css";
 @import "./styles/animations.css";
 
 :root {
-  /* @colorThemes/lightTheme/grayNavyBlue */
-  --background: #f7f6f7;
+  --background: #ffffff;
   --card: #ffffff;
-  --foreground: #0c1325;
-  --primary-cta: #0798ff;
-  --primary-cta-text: #f7f6f7;
+  --foreground: #111111;
+  --primary-cta: #111111;
+  --primary-cta-text: #ffffff;
   --secondary-cta: #ffffff;
-  --secondary-cta-text: #0c1325;
-  --accent: #93c7ff;
-  --background-accent: #a8cde8;
+  --secondary-cta-text: #111111;
+  --accent: #666666;
+  --background-accent: #f5f5f5;
 
   /* @layout/border-radius/rounded */
-  --radius: 0.5rem;
+  --radius: 4px;
 
   /* @layout/content-width/medium */
   --width-content-width: clamp(40rem, 72.5vw, 100rem);
@@ -88,8 +87,9 @@
   --color-background-accent: var(--background-accent);
 
   /* Fonts */
-  --font-sans: 'Open Sans', sans-serif;
-  --font-tight: "Inter Tight", sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-tight: 'Inter', sans-serif;
   --font-mono: monospace;
 
   /* Border Radius */
