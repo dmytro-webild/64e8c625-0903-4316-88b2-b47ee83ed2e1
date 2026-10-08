@@ -1,21 +1,21 @@
 import Button from "@/components/ui/Button";
 import TextAnimation from "@/components/ui/TextAnimation";
 
-interface AboutTextProps {
+interface HakkımdaTextProps {
   title: string;
   primaryButton?: { text: string; href: string };
   secondaryButton?: { text: string; href: string };
   textAnimation: "slide-up" | "fade-blur" | "fade";
 }
 
-const AboutText = ({
+const HakkımdaText = ({
   title,
   primaryButton,
   secondaryButton,
   textAnimation,
-}: AboutTextProps) => {
+}: HakkımdaTextProps) => {
   return (
-    <section aria-label="About section" className="py-20">
+    <section aria-label="Hakkımda section" className="py-20">
       <div className="w-content-width mx-auto flex flex-col gap-2 items-center">
         <TextAnimation
           text={title}
@@ -36,4 +36,4 @@ const AboutText = ({
   );
 };
 
-export default AboutText;
+export default HakkımdaText;
