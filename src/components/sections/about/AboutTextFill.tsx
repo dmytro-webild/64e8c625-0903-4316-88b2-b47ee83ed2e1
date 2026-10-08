@@ -4,7 +4,7 @@ import Button from "@/components/ui/Button";
 import TextAnimation from "@/components/ui/TextAnimation";
 import ImageOrVideo from "@/components/ui/ImageOrVideo";
 
-type AboutTextFillProps = {
+type HakkımdaTextFillProps = {
   tag?: string;
   title: string;
   description?: string;
@@ -13,7 +13,7 @@ type AboutTextFillProps = {
   textAnimation: "slide-up" | "fade-blur" | "fade";
 } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never });
 
-const AboutTextFill = ({
+const HakkımdaTextFill = ({
   tag,
   title,
   description,
@@ -22,7 +22,7 @@ const AboutTextFill = ({
   imageSrc,
   videoSrc,
   textAnimation,
-}: AboutTextFillProps) => {
+}: HakkımdaTextFillProps) => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const words = title.split(" ");
 
@@ -45,7 +45,7 @@ const AboutTextFill = ({
   return (
     <section
       ref={sectionRef}
-      aria-label="About section"
+      aria-label="Hakkımda section"
       className="py-20"
     >
       <div className="flex flex-col gap-8 md:gap-10 mx-auto w-content-width">
@@ -91,4 +91,4 @@ const AboutTextFill = ({
   );
 };
 
-export default AboutTextFill;
+export default HakkımdaTextFill;
