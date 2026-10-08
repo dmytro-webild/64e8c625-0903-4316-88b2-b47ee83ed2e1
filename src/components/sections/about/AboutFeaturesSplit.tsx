@@ -4,7 +4,7 @@ import TextAnimation from "@/components/ui/TextAnimation";
 import ImageOrVideo from "@/components/ui/ImageOrVideo";
 import { resolveIcon } from "@/utils/resolve-icon";
 
-type AboutFeaturesSplitProps = {
+type HakkımdaFeaturesSplitProps = {
   tag: string;
   title: string;
   description: string;
@@ -14,7 +14,7 @@ type AboutFeaturesSplitProps = {
   textAnimation: "slide-up" | "fade-blur" | "fade";
 } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never });
 
-const AboutFeaturesSplit = ({
+const HakkımdaFeaturesSplit = ({
   tag,
   title,
   description,
@@ -24,9 +24,9 @@ const AboutFeaturesSplit = ({
   imageSrc,
   videoSrc,
   textAnimation,
-}: AboutFeaturesSplitProps) => {
+}: HakkımdaFeaturesSplitProps) => {
   return (
-    <section aria-label="About section" className="py-20">
+    <section aria-label="Hakkımda section" className="py-20">
       <div className="flex flex-col gap-8 md:gap-10 mx-auto w-content-width">
         <div className="flex flex-col items-center gap-2">
           <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
@@ -89,4 +89,4 @@ const AboutFeaturesSplit = ({
   );
 };
 
-export default AboutFeaturesSplit;
+export default HakkımdaFeaturesSplit;

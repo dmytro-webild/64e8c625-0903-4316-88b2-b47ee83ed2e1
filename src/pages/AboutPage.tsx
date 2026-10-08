@@ -2,11 +2,11 @@ import Button from "@/components/ui/Button";
 import TextAnimation from "@/components/ui/TextAnimation";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
-export default function AboutPage() {
+export default function HakkımdaPage() {
   return (
     <>
-      <div data-webild-section="AboutTextSplit">
-        <section aria-label="About section" className="">
+      <div data-webild-section="HakkımdaTextSplit">
+        <section aria-label="Hakkımda section" className="">
           <div className="flex flex-col mx-auto w-content-width">
             <div className="flex flex-col md:flex-row gap-3">
               <div className="w-full md:w-1/2">

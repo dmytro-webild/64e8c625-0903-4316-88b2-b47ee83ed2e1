@@ -14,7 +14,7 @@ type SocialLink = {
   onClick?: () => void;
 };
 
-type AboutTestimonialParallaxProps = {
+type HakkımdaTestimonialParallaxProps = {
   tag: string;
   quote: string;
   author: string;
@@ -39,7 +39,7 @@ const SocialLinkButton = ({ icon, label, href, onClick }: SocialLink) => {
   );
 };
 
-const AboutTestimonialParallax = ({
+const HakkımdaTestimonialParallax = ({
   tag,
   quote,
   author,
@@ -48,7 +48,7 @@ const AboutTestimonialParallax = ({
   videoSrc,
   socialLinks,
   textAnimation,
-}: AboutTestimonialParallaxProps) => {
+}: HakkımdaTestimonialParallaxProps) => {
   const imageRef = useRef<HTMLDivElement>(null);
 
   const { scrollYProgress } = useScroll({
@@ -58,7 +58,7 @@ const AboutTestimonialParallax = ({
   const imageScale = useTransform(scrollYProgress, [0, 0.6], [1.3, 1]);
 
   return (
-    <section aria-label="About section" className="py-20">
+    <section aria-label="Hakkımda section" className="py-20">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-5 mx-auto w-content-width">
         <div className="relative md:col-span-3 p-10 md:p-20 card rounded">
           <div className="absolute flex items-center justify-center -top-7 -left-7 md:-top-8 md:-left-8 size-14 md:size-16 primary-button rounded">
@@ -104,4 +104,4 @@ const AboutTestimonialParallax = ({
   );
 };
 
-export default AboutTestimonialParallax;
+export default HakkımdaTestimonialParallax;

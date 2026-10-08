@@ -9,7 +9,7 @@ const descriptions = [
   "Bir markanın bulunabilmesini de tasarımın parçası sayıyorum."
 ];
 
-interface AboutTextSplitProps {
+interface HakkımdaTextSplitProps {
   title: string;
   descriptions: string[];
   primaryButton?: { text: string; href: string };
@@ -17,9 +17,9 @@ interface AboutTextSplitProps {
   textAnimation: "slide-up" | "fade-blur" | "fade";
 }
 
-const AboutInline = () => {
+const HakkımdaInline = () => {
   return (
-    <section aria-label="About section" className="py-20">
+    <section aria-label="Hakkımda section" className="py-20">
       <div className="flex flex-col gap-20 mx-auto w-content-width">
         <div className="flex flex-col md:flex-row gap-3 md:gap-15">
           <div className="w-full md:w-1/2">
@@ -59,10 +59,10 @@ const AboutInline = () => {
   );
 };
 
-export default function AboutSection() {
+export default function HakkımdaSection() {
   return (
     <div data-webild-section="about" data-section="about" id="about">
-      <AboutInline />
+      <HakkımdaInline />
     </div>
   );
 }

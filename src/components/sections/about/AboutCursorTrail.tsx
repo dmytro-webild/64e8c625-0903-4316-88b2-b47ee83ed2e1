@@ -9,7 +9,7 @@ import TextAnimation from "@/components/ui/TextAnimation";
 
 type TrailMedia = { imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never };
 
-type AboutCursorTrailProps = {
+type HakkımdaCursorTrailProps = {
   tag: string;
   title: string;
   media: TrailMedia[];
@@ -18,14 +18,14 @@ type AboutCursorTrailProps = {
   textAnimation: "slide-up" | "fade-blur" | "fade";
 };
 
-const AboutCursorTrail = ({
+const HakkımdaCursorTrail = ({
   tag,
   title,
   media,
   primaryButton,
   secondaryButton,
   textAnimation,
-}: AboutCursorTrailProps) => {
+}: HakkımdaCursorTrailProps) => {
   const wrapperRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -176,7 +176,7 @@ const AboutCursorTrail = ({
   }, []);
 
   return (
-    <section aria-label="About section" className="relative py-60">
+    <section aria-label="Hakkımda section" className="relative py-60">
       <div ref={wrapperRef} data-trail="wrapper" className="w-full h-full absolute inset-0 z-0">
         {media.map((item, i) => (
           <div key={i} data-trail="item" className="invisible rounded w-[15em] h-[20em] absolute overflow-hidden">
@@ -202,4 +202,4 @@ const AboutCursorTrail = ({
   );
 };
 
-export default AboutCursorTrail;
+export default HakkımdaCursorTrail;

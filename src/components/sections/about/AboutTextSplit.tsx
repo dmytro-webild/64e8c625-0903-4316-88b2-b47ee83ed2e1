@@ -1,7 +1,7 @@
 import Button from "@/components/ui/Button";
 import TextAnimation from "@/components/ui/TextAnimation";
 
-interface AboutTextSplitProps {
+interface HakkımdaTextSplitProps {
   title: string;
   descriptions: string[];
   primaryButton?: { text: string; href: string };
@@ -9,15 +9,15 @@ interface AboutTextSplitProps {
   textAnimation: "slide-up" | "fade-blur" | "fade";
 }
 
-const AboutTextSplit = ({
+const HakkımdaTextSplit = ({
   title,
   descriptions,
   primaryButton,
   secondaryButton,
   textAnimation,
-}: AboutTextSplitProps) => {
+}: HakkımdaTextSplitProps) => {
   return (
-    <section aria-label="About section" className="py-20">
+    <section aria-label="Hakkımda section" className="py-20">
       <div className="flex flex-col gap-20 mx-auto w-content-width">
         <div className="flex flex-col md:flex-row gap-3 md:gap-15">
           <div className="w-full md:w-1/2">
@@ -57,4 +57,4 @@ const AboutTextSplit = ({
   );
 };
 
-export default AboutTextSplit;
+export default HakkımdaTextSplit;
