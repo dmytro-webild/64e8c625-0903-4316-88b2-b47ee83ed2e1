@@ -13,13 +13,11 @@ import ContactSection from './HomePage/sections/Contact';
 
 
 import FaqSection from './HomePage/sections/Faq';
-import ClientsSection from './HomePage/sections/Clients';
-import TestimonialsSection from './HomePage/sections/Testimonials';export default function HomePage(): React.JSX.Element {
+import ClientsSection from './HomePage/sections/Clients';export default function HomePage(): React.JSX.Element {
   return (
 <>
       <HeroSection />
       <ClientsSection />
-      <TestimonialsSection />
 
       <AboutSection />
 
