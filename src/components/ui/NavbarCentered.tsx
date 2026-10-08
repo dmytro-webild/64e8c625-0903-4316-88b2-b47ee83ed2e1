@@ -62,7 +62,7 @@ const NavbarCentered = ({ logo = defaultLogo, navItems, ctaButton }: NavbarCente
       >
         <div className="mx-auto flex items-center justify-between gap-6 px-6 md:px-12 w-full max-w-[1800px]">
           {/* Left Side: Brand Statement & Logo */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4">
             <a href="/" className="flex items-center shrink-0">
               <img
                 src={logoSrc}
@@ -70,7 +70,7 @@ const NavbarCentered = ({ logo = defaultLogo, navItems, ctaButton }: NavbarCente
                 className="h-7 md:h-9 w-auto object-contain"
               />
             </a>
-            <span className="hidden xl:inline-block text-sm font-medium text-foreground/80 max-w-xs leading-snug">
+            <span className="hidden xl:inline-block text-sm font-medium text-foreground/80 whitespace-nowrap">
               Yasemin Günhan® builds brand systems, not just logos.
             </span>
           </div>
