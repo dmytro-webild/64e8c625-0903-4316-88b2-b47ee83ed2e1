@@ -6,10 +6,10 @@ import React from 'react';
 export default function HakkmdaTextSplitSection(): React.JSX.Element {
   return (
     <div data-webild-section="HakkımdaTextSplit">
-      <section aria-label="Hakkımda" className="w-full bg-background">
+      <section aria-label="Hakkımda" className="w-full bg-background py-16 md:py-24">
         <div className="w-content-width mx-auto flex flex-col">
           {/* Top Area: 2 Columns */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start mb-16 md:mb-20">
             <div className="md:col-span-7 flex flex-col gap-6 md:pr-6">
               <h1 className="font-serif text-[36px] md:text-[56px] font-semibold text-foreground leading-[1.15] text-balance">
                 Yasemin Günhan, marka kimliği ve ambalaj tasarımcısı
@@ -30,7 +30,7 @@ export default function HakkmdaTextSplitSection(): React.JSX.Element {
           {/* Rows with 64px spacing and 1px border lines */}
           <div className="flex flex-col">
             {/* Row 1 */}
-            <div className="border-t border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+            <div className="border-t border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-start py-12 md:py-16">
               <div className="md:col-span-4">
                 <h2 className="font-serif text-[28px] font-semibold text-foreground leading-snug">
                   Yasemin Günhan kimdir?
@@ -44,7 +44,7 @@ export default function HakkmdaTextSplitSection(): React.JSX.Element {
             </div>
 
             {/* Row 2 */}
-            <div className="border-t border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+            <div className="border-t border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-start py-12 md:py-16">
               <div className="md:col-span-4">
                 <h2 className="font-serif text-[28px] font-semibold text-foreground leading-snug">
                   Vizyonum nedir?
@@ -58,7 +58,7 @@ export default function HakkmdaTextSplitSection(): React.JSX.Element {
             </div>
 
             {/* Row 3 */}
-            <div className="border-t border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+            <div className="border-t border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-start py-12 md:py-16">
               <div className="md:col-span-4">
                 <h2 className="font-serif text-[28px] font-semibold text-foreground leading-snug">
                   Misyonum nedir?
@@ -72,7 +72,7 @@ export default function HakkmdaTextSplitSection(): React.JSX.Element {
             </div>
 
             {/* Row 4 */}
-            <div className="border-t border-b border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+            <div className="border-t border-b border-foreground/15 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-12 items-start py-12 md:py-16">
               <div className="md:col-span-4">
                 <h2 className="font-serif text-[28px] font-semibold text-foreground leading-snug">
                   Nasıl çalışıyorum?
