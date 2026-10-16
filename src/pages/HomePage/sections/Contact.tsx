@@ -99,14 +99,7 @@ const ContactInline = () => {
                 </span>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2 border-t border-foreground/10 mt-2">
-                <span className="text-xs text-foreground/70">
-                  ⚡ 24 saat içinde e-posta ile dönüş garantisi
-                </span>
-                <button type="submit" className="primary-button px-6 py-2.5 rounded text-sm font-medium cursor-pointer">
-                  Schedule Your Free Consultation
-                </button>
-              </div>
+
             </form>
 
             <p className="text-xs text-foreground/70 text-center">
