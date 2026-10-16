@@ -17,7 +17,7 @@ interface HakkımdaTextSplitProps {
   textAnimation: "slide-up" | "fade-blur" | "fade";
 }
 
-const HakkımdaInline = () => {
+const AboutInline = () => {
   return (
     <section aria-label="Hakkımda section" className="py-20">
       <div className="flex flex-col gap-20 mx-auto w-content-width">
@@ -28,7 +28,7 @@ const HakkımdaInline = () => {
               variant={"fade-blur"}
               gradientText={true}
               tag="h2"
-              className="text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-balance"
+              className="text-3xl md:text-5xl font-bold leading-tight text-balance"
             />
           </div>
 
@@ -59,10 +59,10 @@ const HakkımdaInline = () => {
   );
 };
 
-export default function HakkımdaSection() {
+export default function AboutSection() {
   return (
     <div data-webild-section="about" data-section="about" id="about">
-      <HakkımdaInline />
+      <AboutInline />
     </div>
   );
 }
