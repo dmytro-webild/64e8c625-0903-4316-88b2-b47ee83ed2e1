@@ -6,13 +6,13 @@
 :root {
   --background: #f7f6f7;
   --card: #ffffff;
-  --foreground: #1b0c25;
-  --primary-cta: #1b0c25;
+  --foreground: #250c0d;
+  --primary-cta: #b82b40;
   --primary-cta-text: #f7f6f7;
   --secondary-cta: #ffffff;
-  --secondary-cta-text: #1b0c25;
-  --accent: #ff93e4;
-  --background-accent: #e8a8c3;
+  --secondary-cta-text: #250c0d;
+  --accent: #b90941;
+  --background-accent: #e8a8b6;
 
   /* @layout/border-radius/rounded */
   --radius: 4px;
