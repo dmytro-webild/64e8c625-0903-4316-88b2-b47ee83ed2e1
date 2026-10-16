@@ -4,15 +4,15 @@
 @import "./styles/animations.css";
 
 :root {
-  --background: #0a0a0a;
-  --card: #1a1a1a;
-  --foreground: #f8f5ffe6;
-  --primary-cta: #c89bff;
-  --primary-cta-text: #0a0a0a;
-  --secondary-cta: #1a1a1a;
-  --secondary-cta-text: #f8f5ffe6;
-  --accent: #737373;
-  --background-accent: #737373;
+  --background: #030128;
+  --card: #241f48;
+  --foreground: #ffffff;
+  --primary-cta: #ffffff;
+  --primary-cta-text: #030128;
+  --secondary-cta: #131136;
+  --secondary-cta-text: #d5d4f6;
+  --accent: #44358a;
+  --background-accent: #b597fe;
 
   /* @layout/border-radius/rounded */
   --radius: 4px;
