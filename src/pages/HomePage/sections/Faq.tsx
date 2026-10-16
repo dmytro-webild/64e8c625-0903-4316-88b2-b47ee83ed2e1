@@ -51,10 +51,10 @@ export default function FaqSection(): React.JSX.Element {
   return (
     <div id="faq" data-webild-section="faq">
       <SectionErrorBoundary name="faq">
-        <section className="relative w-full bg-background">
+        <section className="relative w-full bg-background py-16 md:py-24">
           <div className="w-content-width mx-auto">
             <ScrollReveal variant="slide-up">
-              <div className="text-center max-w-content-width mx-auto">
+              <div className="text-center max-w-content-width mx-auto mb-8 md:mb-12">
                 <span className="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase bg-foreground/5 border border-foreground/10 text-foreground/70 rounded-full mb-4">
                   FAQ
                 </span>
